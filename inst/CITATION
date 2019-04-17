@@ -1,0 +1,22 @@
+citHeader("To cite DoE.multi.response in publications use:")
+
+citEntry(entry = "Article",
+  title        = "Central Composite Experimental Designs for Multiple Responses With Different Models",
+  author       = personList(as.person("Wilmina M. Marget"),
+                   as.person("Max D. Morris")),
+  journal      = "Technometrics",
+  year         = "2019",
+  volume       = "0",
+  number       = "0",
+  pages        = "1--16",
+  publisher    = "Taylor & Francis",
+  url          = "https://doi.org/10.1080/00401706.2018.1549102",
+  doi          = "10.1080/00401706.2018.1549102",
+
+  textVersion  =
+  paste("Wilmina M. Marget & Max D. Morris (2019)" ,
+        "Central Composite Experimental Designs for",
+        "Multiple Responses With Different Models,",
+        "Technometrics, DOI: 10.1080/00401706.2018.1549102")
+
+)
