@@ -1,15 +1,25 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+[![Travis build
+status](https://travis-ci.org/margetw/DoE.multi.response.svg?branch=master)](https://travis-ci.org/margetw/DoE.multi.response)
+
 DoE.multi.response
 ==================
 
-The goal of DoE.multi.response is to construct experimental designs that follow the structure of well studied designs (such as CCDs), but extended to problems with multiple response variables where there is some prior information about the relationship between explanatory and response variables.
+The goal of DoE.multi.response is to construct experimental designs that
+follow the structure of well studied designs (such as CCDs), but
+extended to problems with multiple response variables where there is
+some prior information about the relationship between explanatory and
+response variables.
 
 Example
 -------
 
 This is a basic example which shows you how to solve a common problem:
 
-We have a system with four response variables and 5 explanatory variables (factors). Suppose we know from previous process knowledge that:
+We have a system with four response variables and 5 explanatory
+variables (factors). Suppose we know from previous process knowledge
+that:
 
 -   Response 1 is related to factors 1, 2, and 3
 -   Response 2 is related to factors 2, 3, and 4
@@ -63,34 +73,34 @@ ufccd(x)
 #>       Block.ccd       X1       X2       X3       X4       X5
 #> C1.17         1  0.00000  0.00000  0.00000  0.00000  0.00000
 #> C1.18         1  0.00000  0.00000  0.00000  0.00000  0.00000
-#> C1.11         1 -1.00000  1.00000 -1.00000  1.00000  1.00000
 #> C1.13         1 -1.00000 -1.00000  1.00000  1.00000 -1.00000
-#> C1.10         1  1.00000 -1.00000 -1.00000  1.00000 -1.00000
-#> C1.1          1 -1.00000 -1.00000 -1.00000 -1.00000 -1.00000
-#> C1.3          1 -1.00000  1.00000 -1.00000 -1.00000  1.00000
-#> C1.5          1 -1.00000 -1.00000  1.00000 -1.00000 -1.00000
-#> C1.9          1 -1.00000 -1.00000 -1.00000  1.00000 -1.00000
-#> C1.6          1  1.00000 -1.00000  1.00000 -1.00000 -1.00000
-#> C1.19         1  0.00000  0.00000  0.00000  0.00000  0.00000
 #> C1.14         1  1.00000 -1.00000  1.00000  1.00000 -1.00000
-#> C1.4          1  1.00000  1.00000 -1.00000 -1.00000  1.00000
+#> C1.1          1 -1.00000 -1.00000 -1.00000 -1.00000 -1.00000
 #> C1.16         1  1.00000  1.00000  1.00000  1.00000  1.00000
 #> C1.15         1 -1.00000  1.00000  1.00000  1.00000  1.00000
-#> C1.12         1  1.00000  1.00000 -1.00000  1.00000  1.00000
-#> C1.7          1 -1.00000  1.00000  1.00000 -1.00000  1.00000
-#> C1.2          1  1.00000 -1.00000 -1.00000 -1.00000 -1.00000
 #> C1.8          1  1.00000  1.00000  1.00000 -1.00000  1.00000
+#> C1.9          1 -1.00000 -1.00000 -1.00000  1.00000 -1.00000
+#> C1.5          1 -1.00000 -1.00000  1.00000 -1.00000 -1.00000
+#> C1.19         1  0.00000  0.00000  0.00000  0.00000  0.00000
+#> C1.6          1  1.00000 -1.00000  1.00000 -1.00000 -1.00000
+#> C1.2          1  1.00000 -1.00000 -1.00000 -1.00000 -1.00000
+#> C1.3          1 -1.00000  1.00000 -1.00000 -1.00000  1.00000
+#> C1.11         1 -1.00000  1.00000 -1.00000  1.00000  1.00000
+#> C1.7          1 -1.00000  1.00000  1.00000 -1.00000  1.00000
+#> C1.10         1  1.00000 -1.00000 -1.00000  1.00000 -1.00000
+#> C1.4          1  1.00000  1.00000 -1.00000 -1.00000  1.00000
+#> C1.12         1  1.00000  1.00000 -1.00000  1.00000  1.00000
 #> C1.20         1  0.00000  0.00000  0.00000  0.00000  0.00000
-#> S2.12         2  0.00000  0.00000  0.00000  0.00000  0.00000
 #> S2.9          2  0.00000  0.00000  0.00000  0.00000  0.00000
-#> S2.7          2  0.00000  0.00000  0.00000 -2.19089  0.00000
-#> S2.4          2  0.00000  2.19089  0.00000  0.00000  2.19089
-#> S2.5          2  0.00000  0.00000 -2.19089  0.00000  0.00000
 #> S2.6          2  0.00000  0.00000  2.19089  0.00000  0.00000
-#> S2.3          2  0.00000 -2.19089  0.00000  0.00000 -2.19089
-#> S2.1          2 -2.19089  0.00000  0.00000  0.00000  0.00000
 #> S2.8          2  0.00000  0.00000  0.00000  2.19089  0.00000
+#> S2.7          2  0.00000  0.00000  0.00000 -2.19089  0.00000
+#> S2.12         2  0.00000  0.00000  0.00000  0.00000  0.00000
+#> S2.1          2 -2.19089  0.00000  0.00000  0.00000  0.00000
 #> S2.10         2  0.00000  0.00000  0.00000  0.00000  0.00000
-#> S2.11         2  0.00000  0.00000  0.00000  0.00000  0.00000
+#> S2.5          2  0.00000  0.00000 -2.19089  0.00000  0.00000
 #> S2.2          2  2.19089  0.00000  0.00000  0.00000  0.00000
+#> S2.4          2  0.00000  2.19089  0.00000  0.00000  2.19089
+#> S2.11         2  0.00000  0.00000  0.00000  0.00000  0.00000
+#> S2.3          2  0.00000 -2.19089  0.00000  0.00000 -2.19089
 ```

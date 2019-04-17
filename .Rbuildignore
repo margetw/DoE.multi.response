@@ -1,3 +1,4 @@
+^\.travis\.yml$
 ^desktop\.ini$
 ^.*\.Rproj$
 ^\.Rproj\.user$

@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis build status](https://travis-ci.org/margetw/DoE.multi.response.svg?branch=master)](https://travis-ci.org/margetw/DoE.multi.response)
+
 # DoE.multi.response
 
 The goal of DoE.multi.response is to construct experimental designs that follow the structure of well studied designs (such as CCDs), but extended to problems with multiple response variables where there is some prior information about the relationship between explanatory and response variables. 
