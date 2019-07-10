@@ -2,9 +2,10 @@ Package: DoE.multi.response
 Title: Construct Multi-Response Experimental Designs
 Version: 0.1.0
 Authors@R: person("Wilmina", "Marget", email = "margetw@augsburg.edu", role = c("aut", "cre"))
-Description: Construct multi-response experimental designs, such as a UF-CCD (Unique Factor 
-    Central Composite Design), given information (from screening or expert knowledge) about 
+Description: Construct multi-response experimental designs, such as a Unique Factor 
+    Central Composite Design (UF-CCD), given information (from screening or expert knowledge) about 
     which factors are related to each response variable. 
+    Wilmina M. Marget & Max D. Morris (2019)<doi:10.1080/00401706.2018.1549102> 
 Depends:
     R (>= 3.5),
     DoE.wrapper (>= 0.9)
